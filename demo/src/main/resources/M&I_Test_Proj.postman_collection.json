@@ -1,0 +1,810 @@
+{
+	"info": {
+		"_postman_id": "df0082ab-89a1-4e70-98c7-d8253bf7b6ce",
+		"name": "M&I_Test_Proj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Roba 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"naziv\": \"Roba 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Roba 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"naziv\": \"Roba 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Roba 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"naziv\": \"Roba 3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Dokument 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"naziv\": \"Doc 1\",\r\n    \"iznos\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dokument/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dokument",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Dokument 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"naziv\": \"Doc 2\",\r\n    \"iznos\": 400\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dokument/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dokument",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Stavka 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kolicina\":5,\r\n    \"cena\": 1000,\r\n\t\"dokument_id\": 1,\r\n\t\"roba_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Stavka 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kolicina\":2,\r\n    \"cena\": 100,\r\n\t\"dokument_id\": 2,\r\n\t\"roba_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Stavka 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kolicina\":2,\r\n    \"cena\": 140,\r\n\t\"dokument_id\": 1,\r\n\t\"roba_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Roba 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Roba 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Roba 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dokument 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dokument/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dokument",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dokument 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dokument/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dokument",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stavka 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stavka 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stavka 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Roba 3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/delete/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Dokument 1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dokument/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dokument",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Stavka 1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Roba 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"naziv\": \"Roba Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/roba/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"roba",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Dokument 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"naziv\": \"Doc Updated\",\r\n    \"iznos\": 500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dokument/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dokument",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Stavka 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":1,\r\n    \"kolicina\":5,\r\n    \"cena\": 250,\r\n\t\"dokument_id\": 1,\r\n\t\"roba_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stavka/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stavka",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
