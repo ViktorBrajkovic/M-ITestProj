@@ -1,0 +1,13 @@
+com\example\demo\DTO\DokumentStavkaResponseDTO.class
+com\example\demo\repository\DokumentRepository.class
+com\example\demo\controller\DokumentController.class
+com\example\demo\controller\RobaController.class
+com\example\demo\DTO\DokumentStavkaResponseDokDTO.class
+com\example\demo\repository\RobaRepository.class
+com\example\demo\model\DokumentStavka.class
+com\example\demo\model\Dokument.class
+com\example\demo\TestProjApplication.class
+com\example\demo\model\Roba.class
+com\example\demo\controller\DokumentStavkaController.class
+com\example\demo\DTO\DokumentResponseDTO.class
+com\example\demo\repository\DokumentStavkaRepository.class
